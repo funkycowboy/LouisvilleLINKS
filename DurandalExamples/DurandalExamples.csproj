@@ -1,0 +1,209 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{A14CB03F-C82F-4EC0-A96C-1DC44C53F4F0}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>DurandalExamples</RootNamespace>
+    <AssemblyName>DurandalExamples</AssemblyName>
+    <TargetFrameworkVersion>v4.5.1</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <NuGetPackageImportStamp>396b6ece</NuGetPackageImportStamp>
+    <ApplicationInsightsResourceId>/subscriptions/a3716c50-71ee-4632-8885-2f39b3e91f85/resourcegroups/Default-ApplicationInsights-CentralUS/providers/microsoft.insights/components/DurandalExamples</ApplicationInsightsResourceId>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.ApplicationInsights">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.1.1.0\lib\net45\Microsoft.ApplicationInsights.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ApplicationInsights.Extensibility.DependencyCollector">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.DependencyCollector.1.1.0\lib\net45\Microsoft.ApplicationInsights.Extensibility.DependencyCollector.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ApplicationInsights.Extensibility.PerfCounterCollector">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.PerfCounterCollector.1.1.0\lib\net45\Microsoft.ApplicationInsights.Extensibility.PerfCounterCollector.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ApplicationInsights.Extensibility.Web">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.Web.1.1.0\lib\net45\Microsoft.ApplicationInsights.Extensibility.Web.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ApplicationInsights.Web.TelemetryChannel">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.Web.TelemetryChannel.1.1.0\lib\net45\Microsoft.ApplicationInsights.Web.TelemetryChannel.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Microsoft.Diagnostics.Instrumentation.Extensions.Intercept">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.Agent.Intercept.0.17.0\lib\net45\Microsoft.Diagnostics.Instrumentation.Extensions.Intercept.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="packages.config" />
+    <Content Include="ApplicationInsights.config" />
+    <Content Include="README.md" />
+    <Content Include="app\viewComposition\inlineModule" />
+    <Content Include="app\widgets\Readme.md" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="app\eventAggregator\index.html" />
+    <Content Include="app\eventAggregator\index.js" />
+    <Content Include="app\eventAggregator\publisher.html" />
+    <Content Include="app\eventAggregator\publisher.js" />
+    <Content Include="app\eventAggregator\subscriber.html" />
+    <Content Include="app\eventAggregator\subscriber.js" />
+    <Content Include="app\hello\index.html" />
+    <Content Include="app\hello\index.js" />
+    <Content Include="app\keyedMasterDetail\first.html" />
+    <Content Include="app\keyedMasterDetail\first.js" />
+    <Content Include="app\keyedMasterDetail\master.html" />
+    <Content Include="app\keyedMasterDetail\master.js" />
+    <Content Include="app\keyedMasterDetail\second.html" />
+    <Content Include="app\keyedMasterDetail\second.js" />
+    <Content Include="app\keyedMasterDetail\third.html" />
+    <Content Include="app\keyedMasterDetail\third.js" />
+    <Content Include="app\ko\animatedTrans\index.html" />
+    <Content Include="app\ko\animatedTrans\index.js" />
+    <Content Include="app\ko\betterList\index.html" />
+    <Content Include="app\ko\betterList\index.js" />
+    <Content Include="app\ko\clickCounter\index.html" />
+    <Content Include="app\ko\clickCounter\index.js" />
+    <Content Include="app\ko\collections\index.html" />
+    <Content Include="app\ko\collections\index.js" />
+    <Content Include="app\ko\contactsEditor\index.html" />
+    <Content Include="app\ko\contactsEditor\index.js" />
+    <Content Include="app\ko\controlTypes\index.html" />
+    <Content Include="app\ko\controlTypes\index.js" />
+    <Content Include="app\ko\gridEditor\index.html" />
+    <Content Include="app\ko\gridEditor\index.js" />
+    <Content Include="app\ko\helloWorld\index.html" />
+    <Content Include="app\ko\helloWorld\index.js" />
+    <Content Include="app\ko\index.html" />
+    <Content Include="app\ko\index.js" />
+    <Content Include="app\ko\pagedGrid\index.html" />
+    <Content Include="app\ko\pagedGrid\index.js" />
+    <Content Include="app\ko\pagedGrid\simpleGrid.html" />
+    <Content Include="app\ko\pagedGrid\simpleGrid.js" />
+    <Content Include="app\ko\shoppingCart\index.html" />
+    <Content Include="app\ko\shoppingCart\index.js" />
+    <Content Include="app\ko\shoppingCart\sampleProductCategories.js" />
+    <Content Include="app\ko\simpleList\index.html" />
+    <Content Include="app\ko\simpleList\index.js" />
+    <Content Include="app\main.js" />
+    <Content Include="app\masterDetail\index.html" />
+    <Content Include="app\masterDetail\index.js" />
+    <Content Include="app\masterDetail\project.html" />
+    <Content Include="app\masterDetail\project.js" />
+    <Content Include="app\modal\customModal.html" />
+    <Content Include="app\modal\customModal.js" />
+    <Content Include="app\modal\index.html" />
+    <Content Include="app\modal\index.js" />
+    <Content Include="app\shell.html" />
+    <Content Include="app\shell.js" />
+    <Content Include="app\viewComposition\index.html" />
+    <Content Include="app\viewComposition\index.js" />
+    <Content Include="app\viewComposition\inlineModule.js" />
+    <Content Include="app\views\childView1.html" />
+    <Content Include="app\views\childView2.html" />
+    <Content Include="app\widgets\expander\view.html" />
+    <Content Include="app\widgets\expander\viewmodel.js" />
+    <Content Include="app\widgets\index.html" />
+    <Content Include="app\widgets\index.js" />
+    <Content Include="app\widgets\project.html" />
+    <Content Include="app\widgets\project.js" />
+    <Content Include="Changes.txt" />
+    <Content Include="css\ie10mobile.css" />
+    <Content Include="css\samples.css" />
+    <Content Include="index.html" />
+    <Content Include="License.txt" />
+    <Content Include="scripts\ai.0.15.0-build32981.js" />
+    <Content Include="scripts\ai.0.15.0-build32981.min.js" />
+    <Content Include="Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>22790</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:22790/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Import Project="..\packages\Microsoft.ApplicationInsights.Agent.Intercept.0.17.0\build\Microsoft.ApplicationInsights.Agent.Intercept.targets" Condition="Exists('..\packages\Microsoft.ApplicationInsights.Agent.Intercept.0.17.0\build\Microsoft.ApplicationInsights.Agent.Intercept.targets')" />
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Enable NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Microsoft.ApplicationInsights.Agent.Intercept.0.17.0\build\Microsoft.ApplicationInsights.Agent.Intercept.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.ApplicationInsights.Agent.Intercept.0.17.0\build\Microsoft.ApplicationInsights.Agent.Intercept.targets'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

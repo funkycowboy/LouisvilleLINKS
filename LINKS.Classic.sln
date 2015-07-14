@@ -27,6 +27,12 @@ Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "LINKS.Classic", "http://loc
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LINKS.Members", "LINKS.Members\LINKS.Members.csproj", "{E2CF6BF1-EF41-4D63-A4F3-8D58AF284FB1}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LINKS.Members.TypeTowel", "LINKS.Members.TypeTowel\TypeTowel\LINKS.Members.TypeTowel.csproj", "{48102945-3927-4115-8D11-BC1CBEA9769C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DurandalAuthenticationTemplate", "Durandal_Serverside_Authentication-master\DurandalAuthenticationTemplate\DurandalAuthenticationTemplate.csproj", "{8BD9DA7B-539F-407E-894D-7E0D073C1240}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DurandalExamples", "DurandalExamples\DurandalExamples.csproj", "{A14CB03F-C82F-4EC0-A96C-1DC44C53F4F0}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -41,6 +47,18 @@ Global
 		{E2CF6BF1-EF41-4D63-A4F3-8D58AF284FB1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E2CF6BF1-EF41-4D63-A4F3-8D58AF284FB1}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E2CF6BF1-EF41-4D63-A4F3-8D58AF284FB1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{48102945-3927-4115-8D11-BC1CBEA9769C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{48102945-3927-4115-8D11-BC1CBEA9769C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{48102945-3927-4115-8D11-BC1CBEA9769C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{48102945-3927-4115-8D11-BC1CBEA9769C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8BD9DA7B-539F-407E-894D-7E0D073C1240}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8BD9DA7B-539F-407E-894D-7E0D073C1240}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8BD9DA7B-539F-407E-894D-7E0D073C1240}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8BD9DA7B-539F-407E-894D-7E0D073C1240}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A14CB03F-C82F-4EC0-A96C-1DC44C53F4F0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A14CB03F-C82F-4EC0-A96C-1DC44C53F4F0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A14CB03F-C82F-4EC0-A96C-1DC44C53F4F0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A14CB03F-C82F-4EC0-A96C-1DC44C53F4F0}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
