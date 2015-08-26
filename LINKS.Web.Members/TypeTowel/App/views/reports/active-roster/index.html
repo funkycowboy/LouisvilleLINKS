@@ -1,0 +1,56 @@
+﻿<section>
+    <h2 class="page-title" data-bind="text: vm.title"></h2>
+
+    <table id="example" class="display" cellspacing="0" width="100%">
+        <thead>
+            <tr>
+                <th></th>
+                <th>User ID</th>
+                <th>Member ID</th>
+                <th>First Name</th>
+                <th>Last Name</th> 
+
+            </tr>
+        </thead>
+
+        <!--<tfoot>
+            <tr>
+                <th>User ID</th>
+                <th>Username</th>
+            </tr>
+        </tfoot>-->      
+    </table>    
+
+    <div id="MemberDetailsModal" class="">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                    <h4 class="modal-title">Member Information</h4>
+                </div>
+                <div class="modal-body">
+                    <div class="form-group">
+                        <label class="control-label">Member ID:</label>
+                        <input type="text" id="MemberID" class="input-sm" maxlength="25" data-bind="value: vm.modelData.MemberId()" />
+                    </div>
+                    <div class="form-group">
+                        <label class="control-label">First Name:</label>
+                        <input type="text" id="FirstName" class="input-sm" maxlength="25" data-bind="value: vm.modelData.FirstName()" />
+                    </div>
+                    <div class="form-group">
+                        <label class="control-label">Last Name:</label>
+                        <input type="text" id="LastName" class="input-sm" maxlength="25" data-bind="value: vm.modelData.LastName()" />
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Save</button>
+                </div>
+            </div><!-- /.modal-content -->
+        </div><!-- /.modal-dialog -->
+    </div><!-- /.modal -->
+
+    <button style="margin-bottom:200px;" type="button" data-bind="click: vm.test">Test</button>
+
+</section>
+
